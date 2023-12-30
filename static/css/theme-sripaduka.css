@@ -1,0 +1,295 @@
+
+@import "theme-blue.css";
+
+:root {
+  --CODE-theme: learn; /* name of the chroma stylesheet file */
+  --CODE-BLOCK-color: rgba( 226, 228, 229, 1 ); /* fallback color for code text */
+  --CODE-BLOCK-BG-color: rgba( 40, 42, 54, 1 ); /* fallback color for code background */
+}
+
+
+body {
+    color: var(--MAIN-TEXT-color) !important;
+
+}
+
+
+textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+
+h2, h3, h4, h5 {
+    color: var(--MAIN-TITLES-TEXT-color) !important;
+}
+
+a {
+    color: var(--MAIN-LINK-color);
+}
+
+.anchor {
+    color: var(--MAIN-ANCHOR-color);
+}
+
+a:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+}
+
+#sidebar ul li.visited > a .read-icon {
+	color: var(--MENU-VISITED-color);
+}
+
+#sidebar #footer {
+  padding-top: 20px !important;
+}
+
+#sidebar #footer h2.github-title {
+  font-size: 20px;
+  color: #fd9827 !important;
+  margin: 10px 0px 5px;
+  padding: 0px;
+  font-weight: normal !important;
+  margin-top: 10px;
+  padding-top: 30px;
+  border-top: 1px dotted #384657;
+}
+
+#sidebar #footer h3.github-title {
+  font-size: 14px;
+  margin: 10px 0px 5px;
+  padding: 0px;
+  text-transform: uppercase;
+  letter-spacing: .15px;
+}
+
+#sidebar #footer h5.copyright, #sidebar #footer p.build-number {
+  font-size: 10px;
+  letter-spacing: .15px;
+  line-height: 150% !important;
+}
+
+#body a.highlight:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -ms-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+    background-color: var(--MAIN-LINK-HOVER-color);
+}
+#sidebar {
+	background-color: var(--MENU-SECTIONS-BG-color);
+}
+#sidebar #header-wrapper {
+    background: var(--MENU-HEADER-BG-color);
+    color: var(--MENU-SEARCH-BOX-color);
+    border-color: var(--MENU-HEADER-BORDER-color);
+}
+#sidebar .searchbox {
+	border-color: var(--MENU-SEARCH-BOX-color);
+    background: var(--MENU-SEARCH-BG-color);
+}
+#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+    background: var(--MENU-SECTIONS-ACTIVE-BG-color);
+}
+#sidebar .searchbox * {
+    color: var(--MENU-SEARCH-BOX-ICONS-color);
+}
+
+#sidebar a {
+    color: var(--MENU-SECTIONS-LINK-color);
+}
+
+#sidebar a:hover {
+    color: var(--MENU-SECTIONS-LINK-HOVER-color);
+}
+
+#sidebar ul li.active > a {
+    background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
+    color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
+}
+
+#sidebar hr {
+    border-color: var(--MENU-SECTION-HR-color);
+}
+
+#navigation a.nav-prev, #navigation a.nav-next {
+    color: #f19e39 !important;
+}
+
+#navigation a.nav-prev:hover, #navigation a.nav-next:hover  {
+    color: #e07d04 !important;
+}
+
+div.notices p:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: 'Font Awesome\ 5 Free';
+    content: #F06A;
+    font-weight: 900; /* Fix version 5.0.9 */
+    left: 10px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid #dddddd;
+    font-weight: normal;
+    color: #454545;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid var(--MENU-HEADER-BG-color);
+    background: var(--MENU-HEADER-BG-color);
+    font-weight: normal;
+    color: #fff;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #eeeeee;
+}
+
+.ui-widget-header {
+  border: 1px solid #eeeeee;
+}
+
+.hljs {
+  background-color: none; 
+}
+
+pre {
+  background-color: var(--MENU-SECTIONS-BG-color) !important;
+}
+
+div.notices.info p {
+    border-top: 30px solid #fd9827;
+    background: #FFF2DB;
+}
+
+@font-face {
+    font-family: Ponnala;
+    src: url(/fonts/Ponnala.ttf);
+}
+
+@font-face {
+    font-family: Gidugu;
+    src: url(/fonts/Gidugu.ttf);
+}
+@font-face {
+    font-family: dhurjati;
+    src: url(/fonts/dhurjati.ttf);
+}
+@font-face {
+  font-family: adishilaBold;
+  src: url(/fonts/AdishilaBold.ttᳶf);
+}
+
+@font-face {
+  font-family: adishila;
+  src: url(/fonts/Adishila.ttᳶf);
+}
+@font-face {
+  font-family: adishilaBoldItalic;
+  src: url(/fonts/AdishilaBoldItalic.ttᳶf);
+}
+
+div.shloka {
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 5px;
+  width: 80%;
+  font-size: 150%;
+  font-family: adishila;
+}
+div.shloka_telugu {
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 5px;
+  width: 80%;
+  font-size: 120%;
+  font-family: Gidugu;
+}
+
+  .shloka_quote {
+    color: #e427fd;
+  }
+  
+  .shloka_second {
+    color: #272bfd;
+  }
+
+  .title {
+    font-size: 250%;
+    font-family: Ponnala;
+    color: #fd4727;
+    width: 100%; 
+    text-align: center; 
+  }
+
+  .title_normal {
+    font-size: 150%;
+    font-family: Ponnala;
+    width: 100%; 
+    text-align: left;
+
+    margin: 20px;
+  }
+  
+
+
+  .quote {
+    font-size: 100%;
+    color:  #fd3527;
+    font-family: Gidugu;
+    text-align: center;   
+    width: 100%;   
+  }
+
+  .tatparya {
+    background-color: lightgrey;
+    border: 5px solid rgb(211, 180, 170);
+    padding: 20px;
+    margin: 5px;
+    width: 80%;
+    font-size: 150%;
+    font-family: adishila;
+  }
+
+  .sanskrit {
+    font-size: 150%;
+    font-family: adishila;  
+  }
+
+  .telugu {
+    font-size: 120%;
+    font-family: Gidugu;
+  }
+
+  .essay {
+    background-color: lightgrey;
+    border: 5px solid rgb(211, 180, 170);
+    padding: 50px;
+    margin: 20px;
+    width: 100%;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.skt_gadya {
+    font-size: 150%;
+    font-family: adishila;
+}
+
+
+.tel_parayana {
+  font-size: 100%;
+  font-family: Gidugu;
+}
+
+.tel_shloka {
+  font-size: 125%;
+  font-family: Gidugu;
+}
+

@@ -1,0 +1,31 @@
+{
+  "name": "meegada",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sreepaduka/www.meegada.in.git#readme",
+  "bugs": {
+    "url": "https://github.com/sreepaduka/www.meegada.in.git/issues"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sreepaduka/www.meegada.in.git"
+  },
+  "scripts": {
+    "theme": "git submodule init && git submodule update",
+    "drafts": "hugo server -w -v  --enableGitInfo --bind=0.0.0.0 --port 8095",
+    "server": "hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8085 --navigateToChanged",
+    "build": "hugo -v",
+    "test": "docker run -v $PWD/public/:/public 18fgsa/html-proofer /public --empty-alt-ignore --allow-hash-href --log-level ':debug'",
+    "deploy": "aws s3 sync public/ s3://www.meegada.in/ --profile kowmudi",
+    "deploy2": "s5cmd cp -rr public/ s3://www.meegada.in/ --profile kowmudi",
+    "deploycontent": "aws s3 sync public/ s3://www.meegada.in/ --delete --cache-control \"max-age=3600, public\" --exclude \"*\" --include \"*.html\" --include \"*.xml\" --profile kowmudi",
+    "deploytemplates": "aws s3 sync templates/ s3://${TEMPLATE_BUCKET}/templates/${CODEBUILD_GIT_CLEAN_BRANCH}/ --delete --acl public-read --cache-control \"max-age=86400, public\""
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "@openapitools/openapi-generator-cli": "^2.5.2",
+    "hugo-lunr": "^0.0.4",
+    "mermaid": "^9.1.7"
+  }
+}

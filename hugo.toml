@@ -1,0 +1,17 @@
+baseURL = 'http://soundaryalahari.sripaduka.org/'
+languageCode = 'en-us'
+title = 'SoundaryaLahari'
+theme = 'relearn'
+
+[params]
+  themeVariant = [ "sripaduka" ]
+
+[outputs]
+  home = ["HTML", "RSS", "PRINT", "SEARCH"]
+  section = ["HTML", "RSS", "PRINT"]
+  page = ["HTML", "RSS", "PRINT"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

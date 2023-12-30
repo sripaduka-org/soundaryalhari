@@ -1,0 +1,44 @@
+.tag {
+	font-size: .8em;
+	background: #d2700f;
+	color: #fff;
+	padding: 4px 10px 4px 20px;
+	border-radius: 4px;
+	display: table;
+	float: right;
+	position: relative;
+	margin-top: -40px;
+	margin-right: 10px;
+}
+.tag:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	float: left;
+	width: 4px;
+	height: 4px;
+	border: solid 1px;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #fff;
+	box-shadow: -1px -1px 2px #004977;
+}
+
+.blockquote {
+	display: block;
+	position: relative;
+	padding: 4px 0px 20px 20px;
+	background: #f8f8f8;
+	border-radius: 10px;
+	border: 1px solid #e8e8e8;
+	margin-bottom: 20px;
+}
+.keyword {
+	font-weight: bold;
+	color: orangered;
+}
+.shloka {
+	font-size: 200%;
+	padding: 10px;
+}
