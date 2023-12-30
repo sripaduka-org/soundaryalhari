@@ -1,2 +1,2 @@
-# soundaryalhari
-Project to publish sripaduka-soundarya lahari with book
+# soundaryalahari
+Project to publish sripaduka-soundaryalahari
